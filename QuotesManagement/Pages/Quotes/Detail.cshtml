@@ -1,0 +1,25 @@
+﻿@page "{quoteID:long}"
+
+@model QuotesManagement.Pages.Quotes.DetailModel
+@{ }
+
+
+@if (Model.Message != null)
+{
+<div class="alert alert-info">@Model.Message</div>}
+
+<h2>@Model.Quote.Title</h2>
+
+<div>
+    ID: @Model.Quote.Id
+</div>
+<div>
+    Content: @Model.Quote.Content
+</div>
+
+<div>
+    Author: @Model.Quote.Author.FirstName @Model.Quote.Author.LastName
+</div>
+
+<br />
+<a asp-page="./List" class="btn btn-primary">All Quotes</a>

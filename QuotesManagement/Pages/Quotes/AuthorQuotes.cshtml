@@ -1,0 +1,25 @@
+﻿@page "{authorId}"
+@model QuotesManagement.Pages.Quotes.AuthorQuotesModel
+@{ }
+
+
+<table class="table mt-5">
+    <tr>
+        <th>ID</th>
+        <th>Title</th>
+        <th>Content</th>
+        <th>Author</th>
+    </tr>
+    @foreach (var quote in Model.Quotes)
+    {
+<tr>
+    <td>@quote.Id</td>
+    <td>@quote.Title</td>
+    <td>@quote.Content</td>
+    <td>@quote.Author.FirstName @quote.Author.LastName</td>
+</tr>
+}
+</table>
+
+<br />
+<a asp-page="./List" class="btn btn-primary">All Quotes</a>

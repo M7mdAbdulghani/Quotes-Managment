@@ -1,0 +1,27 @@
+﻿@page
+@model QuotesManagement.Pages.Authors.EditModel
+@{ }
+
+
+<h2>Adding New Author</h2>
+
+
+<form method="post">
+    <input type="hidden" asp-for="Author.Id" />
+    <div class="form-group">
+        <label asp-for="Author.FirstName"></label>
+        <input asp-for="Author.FirstName" class="form-control" />
+        <span class="text-danger" asp-validation-for="Author.FirstName"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Author.LastName"></label>
+        <input asp-for="Author.LastName" class="form-control" rows="5" />
+        <span class="text-danger" asp-validation-for="Author.LastName"></span>
+    </div>
+
+    <button class="btn btn-primary" type="submit">Save</button>
+</form>
+
+<a class="btn btn-primary mt-3" asp-page="./List">
+    All Authors
+</a>

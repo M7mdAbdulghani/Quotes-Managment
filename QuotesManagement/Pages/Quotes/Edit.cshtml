@@ -1,0 +1,38 @@
+﻿@page "{quoteID:long?}"
+@model QuotesManagement.Pages.Quotes.EditModel
+@{ }
+
+
+@if (Model.Quote.Title == null)
+{
+<h2>Adding New Quote</h2> }
+else
+{
+<h2>Editing @Model.Quote.Title</h2>}
+
+
+<form method="post">
+    <input type="hidden" asp-for="Quote.Id" />
+    <div class="form-group">
+        <label asp-for="Quote.Title"></label>
+        <input asp-for="Quote.Title" class="form-control" />
+        <span class="text-danger" asp-validation-for="Quote.Title"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Quote.Content"></label>
+        <textarea asp-for="Quote.Content" class="form-control" rows="5"></textarea>
+        <span class="text-danger" asp-validation-for="Quote.Content"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Quote.AuthorId"></label>
+        <select class="form-control" asp-for="Quote.AuthorId" asp-items="@ViewBag.Authors">
+        </select>
+        <span class="text-danger" asp-validation-for="Quote.AuthorId"></span>
+    </div>
+
+    <button class="btn btn-primary" type="submit">Save</button>
+</form>
+
+<a class="btn btn-primary mt-3" asp-page="./List">
+    All Quotes
+</a>

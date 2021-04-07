@@ -1,0 +1,24 @@
+﻿@page
+@model QuotesManagement.Pages.Quotes.RandomQuoteModel
+@{ }
+
+<h2>Random Quote</h2>
+
+
+<div>
+    <strong>ID: </strong> @Model.Quote.Id
+</div>
+<div>
+    <strong>Title: </strong>@Model.Quote.Title
+</div>
+
+<div>
+    <strong>Content: </strong>@Model.Quote.Content
+</div>
+
+<div>
+    <strong>Author: </strong>@Model.Quote.Author.FirstName @Model.Quote.Author.LastName
+</div>
+
+<br />
+<a asp-page="./List" class="btn btn-primary">All Quotes</a>

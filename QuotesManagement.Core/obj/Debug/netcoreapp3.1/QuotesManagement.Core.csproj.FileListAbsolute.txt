@@ -1,0 +1,9 @@
+E:\Courses\Interviews\Sarahah\QuotesManagement\QuotesManagement.Core\bin\Debug\netcoreapp3.1\QuotesManagement.Core.deps.json
+E:\Courses\Interviews\Sarahah\QuotesManagement\QuotesManagement.Core\bin\Debug\netcoreapp3.1\QuotesManagement.Core.dll
+E:\Courses\Interviews\Sarahah\QuotesManagement\QuotesManagement.Core\bin\Debug\netcoreapp3.1\QuotesManagement.Core.pdb
+E:\Courses\Interviews\Sarahah\QuotesManagement\QuotesManagement.Core\obj\Debug\netcoreapp3.1\QuotesManagement.Core.csprojAssemblyReference.cache
+E:\Courses\Interviews\Sarahah\QuotesManagement\QuotesManagement.Core\obj\Debug\netcoreapp3.1\QuotesManagement.Core.AssemblyInfoInputs.cache
+E:\Courses\Interviews\Sarahah\QuotesManagement\QuotesManagement.Core\obj\Debug\netcoreapp3.1\QuotesManagement.Core.AssemblyInfo.cs
+E:\Courses\Interviews\Sarahah\QuotesManagement\QuotesManagement.Core\obj\Debug\netcoreapp3.1\QuotesManagement.Core.csproj.CoreCompileInputs.cache
+E:\Courses\Interviews\Sarahah\QuotesManagement\QuotesManagement.Core\obj\Debug\netcoreapp3.1\QuotesManagement.Core.dll
+E:\Courses\Interviews\Sarahah\QuotesManagement\QuotesManagement.Core\obj\Debug\netcoreapp3.1\QuotesManagement.Core.pdb

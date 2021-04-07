@@ -1,0 +1,60 @@
+﻿@page
+@model QuotesManagement.Pages.Quotes.ListModel
+@{ }
+
+<h2>Quotes</h2>
+
+<form method="get">
+    <div class="form-group">
+        <div class="input-group">
+            <input type="text" class="form-control" placeholder="Search" asp-for="SearchTerm">
+            <div class="input-group-append">
+                <button class="btn btn-secondary" type="submit">
+                    <i class="fa fa-search"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+</form>
+
+<table class="table mt-5">
+    <tr>
+        <th>ID</th>
+        <th>Title</th>
+        <th>Content</th>
+        <th>Author</th>
+        <th></th>
+    </tr>
+    @foreach (var quote in Model.Quotes)
+    {
+<tr>
+    <td>@quote.Id</td>
+    <td>@quote.Title</td>
+    <td>@quote.Content</td>
+    <td>@quote.Author.FirstName @quote.Author.LastName</td>
+    <td>
+        <a class="btn btn-primary" asp-page="./Detail" asp-route-quoteID="@quote.Id">
+            Preview
+        </a>
+        <a class="btn btn-warning" asp-page="./Edit" asp-route-quoteID="@quote.Id">
+            Edit
+        </a>
+        <a class="btn btn-danger" asp-page="./Delete" asp-route-quoteID="@quote.Id">
+            Delete
+        </a>
+    </td>
+</tr>}
+</table>
+
+
+<a class="btn btn-info" asp-page="./Edit">Add New Quote</a>
+<a class="btn btn-success" asp-page="./RandomQuote">Get Random Quote</a>
+
+<form method="get">
+    <div class="form-group mt-4">
+        <select onchange="this.form.submit()" class="form-control" asp-for="authorId" asp-items="@ViewBag.Authors">
+        </select>
+    </div>
+</form>
+
+<a class="btn btn-warning" href="/Quotes/AuthorQuotes/@Model.authorId">Get Quotes By Author</a>
