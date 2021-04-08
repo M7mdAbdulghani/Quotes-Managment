@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using QuotesManagement.Core;
@@ -7,6 +8,7 @@ using System.Collections.Generic;
 
 namespace QuotesManagement.Pages.Quotes
 {
+    [Authorize]
     public class EditModel : PageModel
     {
         private readonly IQuoteData quoteData;

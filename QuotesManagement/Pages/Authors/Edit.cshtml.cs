@@ -1,10 +1,12 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using QuotesManagement.Core;
 using QuotesManagement.Data;
 
 namespace QuotesManagement.Pages.Authors
 {
+    [Authorize]
     public class EditModel : PageModel
     {
         private readonly IAuthorData authorData;

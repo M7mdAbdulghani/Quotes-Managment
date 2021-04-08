@@ -1,4 +1,6 @@
 E:\Courses\Interviews\Sarahah\QuotesManagement\QuotesManagement.Data\bin\Debug\netcoreapp3.1\QuotesManagement.Data.deps.json
+E:\Courses\Interviews\Sarahah\QuotesManagement\QuotesManagement.Data\bin\Debug\netcoreapp3.1\QuotesManagement.Data.runtimeconfig.json
+E:\Courses\Interviews\Sarahah\QuotesManagement\QuotesManagement.Data\bin\Debug\netcoreapp3.1\QuotesManagement.Data.runtimeconfig.dev.json
 E:\Courses\Interviews\Sarahah\QuotesManagement\QuotesManagement.Data\bin\Debug\netcoreapp3.1\QuotesManagement.Data.dll
 E:\Courses\Interviews\Sarahah\QuotesManagement\QuotesManagement.Data\bin\Debug\netcoreapp3.1\QuotesManagement.Data.pdb
 E:\Courses\Interviews\Sarahah\QuotesManagement\QuotesManagement.Data\bin\Debug\netcoreapp3.1\QuotesManagement.Core.dll
@@ -6,10 +8,8 @@ E:\Courses\Interviews\Sarahah\QuotesManagement\QuotesManagement.Data\bin\Debug\n
 E:\Courses\Interviews\Sarahah\QuotesManagement\QuotesManagement.Data\obj\Debug\netcoreapp3.1\QuotesManagement.Data.csprojAssemblyReference.cache
 E:\Courses\Interviews\Sarahah\QuotesManagement\QuotesManagement.Data\obj\Debug\netcoreapp3.1\QuotesManagement.Data.AssemblyInfoInputs.cache
 E:\Courses\Interviews\Sarahah\QuotesManagement\QuotesManagement.Data\obj\Debug\netcoreapp3.1\QuotesManagement.Data.AssemblyInfo.cs
+E:\Courses\Interviews\Sarahah\QuotesManagement\QuotesManagement.Data\obj\Debug\netcoreapp3.1\QuotesManagement.Data.csproj.CoreCompileInputs.cache
 E:\Courses\Interviews\Sarahah\QuotesManagement\QuotesManagement.Data\obj\Debug\netcoreapp3.1\QuotesManagement.Data.csproj.CopyComplete
 E:\Courses\Interviews\Sarahah\QuotesManagement\QuotesManagement.Data\obj\Debug\netcoreapp3.1\QuotesManagement.Data.dll
 E:\Courses\Interviews\Sarahah\QuotesManagement\QuotesManagement.Data\obj\Debug\netcoreapp3.1\QuotesManagement.Data.pdb
-E:\Courses\Interviews\Sarahah\QuotesManagement\QuotesManagement.Data\obj\Debug\netcoreapp3.1\QuotesManagement.Data.csproj.CoreCompileInputs.cache
-E:\Courses\Interviews\Sarahah\QuotesManagement\QuotesManagement.Data\bin\Debug\netcoreapp3.1\QuotesManagement.Data.runtimeconfig.json
-E:\Courses\Interviews\Sarahah\QuotesManagement\QuotesManagement.Data\bin\Debug\netcoreapp3.1\QuotesManagement.Data.runtimeconfig.dev.json
 E:\Courses\Interviews\Sarahah\QuotesManagement\QuotesManagement.Data\obj\Debug\netcoreapp3.1\QuotesManagement.Data.genruntimeconfig.cache

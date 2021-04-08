@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using QuotesManagement.Core;
 using QuotesManagement.Data;
@@ -6,6 +7,7 @@ using System.Collections.Generic;
 
 namespace QuotesManagement.Pages.Authors
 {
+    [Authorize]
     public class ListModel : PageModel
     {
         private readonly IAuthorData authorData;

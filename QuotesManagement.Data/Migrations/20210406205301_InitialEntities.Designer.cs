@@ -3,8 +3,6 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Migrations;
-using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
-using QuotesManagement.Data;
 
 namespace QuotesManagement.Data.Migrations
 {
@@ -75,12 +73,11 @@ namespace QuotesManagement.Data.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.Navigation("Author");
                 });
 
             modelBuilder.Entity("QuotesManagement.Core.Author", b =>
                 {
-                    b.Navigation("Quotes");
+                    b.HasMany("Quotes");
                 });
 #pragma warning restore 612, 618
         }

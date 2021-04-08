@@ -14412,6 +14412,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "e:\\Courses\\Interviews\\Sarahah\\QuotesManagement\\QuotesManagement\\Areas\\Identity\\Pages\\_AuthLayout.cshtml",
+      "TargetPath": "Areas\\Identity\\Pages\\_AuthLayout.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "e:\\Courses\\Interviews\\Sarahah\\QuotesManagement\\QuotesManagement\\Pages\\Quotes\\Edit.cshtml",
       "TargetPath": "Pages\\Quotes\\Edit.cshtml",
       "FileKind": "mvc"
@@ -14424,6 +14429,11 @@
     {
       "FilePath": "e:\\Courses\\Interviews\\Sarahah\\QuotesManagement\\QuotesManagement\\Pages\\Privacy.cshtml",
       "TargetPath": "Pages\\Privacy.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "e:\\Courses\\Interviews\\Sarahah\\QuotesManagement\\QuotesManagement\\Areas\\Identity\\Pages\\_ViewImports.cshtml",
+      "TargetPath": "Areas\\Identity\\Pages\\_ViewImports.cshtml",
       "FileKind": "mvc"
     },
     {
@@ -14442,8 +14452,28 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "e:\\Courses\\Interviews\\Sarahah\\QuotesManagement\\QuotesManagement\\Pages\\Shared\\_LoginPartial.cshtml",
+      "TargetPath": "Pages\\Shared\\_LoginPartial.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "e:\\Courses\\Interviews\\Sarahah\\QuotesManagement\\QuotesManagement\\Pages\\Authors\\Edit.cshtml",
       "TargetPath": "Pages\\Authors\\Edit.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "e:\\Courses\\Interviews\\Sarahah\\QuotesManagement\\QuotesManagement\\Areas\\Identity\\Pages\\_ViewStart.cshtml",
+      "TargetPath": "Areas\\Identity\\Pages\\_ViewStart.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "e:\\Courses\\Interviews\\Sarahah\\QuotesManagement\\QuotesManagement\\Areas\\Identity\\Pages\\Account\\Register.cshtml",
+      "TargetPath": "Areas\\Identity\\Pages\\Account\\Register.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "e:\\Courses\\Interviews\\Sarahah\\QuotesManagement\\QuotesManagement\\Areas\\Identity\\Pages\\_ValidationScriptsPartial.cshtml",
+      "TargetPath": "Areas\\Identity\\Pages\\_ValidationScriptsPartial.cshtml",
       "FileKind": "mvc"
     },
     {
@@ -14454,6 +14484,11 @@
     {
       "FilePath": "e:\\Courses\\Interviews\\Sarahah\\QuotesManagement\\QuotesManagement\\Pages\\Quotes\\RandomQuote.cshtml",
       "TargetPath": "Pages\\Quotes\\RandomQuote.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "e:\\Courses\\Interviews\\Sarahah\\QuotesManagement\\QuotesManagement\\Areas\\Identity\\Pages\\Account\\Login.cshtml",
+      "TargetPath": "Areas\\Identity\\Pages\\Account\\Login.cshtml",
       "FileKind": "mvc"
     },
     {
@@ -14474,6 +14509,11 @@
     {
       "FilePath": "e:\\Courses\\Interviews\\Sarahah\\QuotesManagement\\QuotesManagement\\Pages\\Quotes\\Detail.cshtml",
       "TargetPath": "Pages\\Quotes\\Detail.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "e:\\Courses\\Interviews\\Sarahah\\QuotesManagement\\QuotesManagement\\Areas\\Identity\\Pages\\Account\\_ViewImports.cshtml",
+      "TargetPath": "Areas\\Identity\\Pages\\Account\\_ViewImports.cshtml",
       "FileKind": "mvc"
     }
   ],

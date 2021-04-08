@@ -1,10 +1,12 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using QuotesManagement.Core;
 using QuotesManagement.Data;
 
 namespace QuotesManagement.Pages.Quotes
 {
+    [Authorize]
     public class DetailModel : PageModel
     {
         public Quote Quote { get; set; }

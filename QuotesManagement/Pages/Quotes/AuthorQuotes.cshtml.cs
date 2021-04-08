@@ -1,10 +1,12 @@
-﻿using Microsoft.AspNetCore.Mvc.RazorPages;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc.RazorPages;
 using QuotesManagement.Core;
 using QuotesManagement.Data;
 using System.Collections.Generic;
 
 namespace QuotesManagement.Pages.Quotes
 {
+    [Authorize]
     public class AuthorQuotesModel : PageModel
     {
         private readonly IQuoteData quoteData;

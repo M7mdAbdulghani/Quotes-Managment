@@ -6,6 +6,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.OpenApi.Models;
 using QuotesManagement.Data;
+using System;
 
 namespace QuotesManagement
 {
@@ -39,6 +40,13 @@ namespace QuotesManagement
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "Quotes Management API", Version = "v1" });
             });
+
+            services.ConfigureApplicationCookie(options =>
+            {
+                options.ExpireTimeSpan = TimeSpan.FromSeconds(120);
+                options.LoginPath = "/Identity/Account/Login";
+                options.SlidingExpiration = true;
+            });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -68,9 +76,17 @@ namespace QuotesManagement
             {
                 var context = serviceScope.ServiceProvider.GetService<QuotesManagementDbContext>();
                 context.Database.Migrate();
+                var authContext = serviceScope.ServiceProvider.GetService<AuthDBContext>();
+                authContext.Database.Migrate();
             }
 
+            app.UseAuthentication();
+
+
+
             app.UseAuthorization();
+
+
 
             app.UseEndpoints(endpoints =>
             {
