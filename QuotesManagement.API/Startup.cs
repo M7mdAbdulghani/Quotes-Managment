@@ -78,7 +78,10 @@ namespace QuotesManagement.API
 
 
             services.AddMvc();
-            services.AddControllers();
+            services.AddControllersWithViews()
+                    .AddNewtonsoftJson(options =>
+                        options.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore
+                    );
 
 
 
