@@ -28,6 +28,7 @@ namespace QuotesManagement
                 options.UseSqlServer(Configuration.GetConnectionString("QuotesManagementDB"));
             });
 
+
             services.AddScoped<IQuoteData, SqlQuoteData>();
             services.AddScoped<IAuthorData, SqlAuthorData>();
 

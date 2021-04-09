@@ -1,12 +1,12 @@
 ﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using QuotesManagement.API.Helpers;
 using QuotesManagement.Core;
 using QuotesManagement.Data;
 using System.Collections.Generic;
 
 namespace QuotesManagement.Controllers
 {
-    [Authorize]
     [Route("api/[controller]")]
     [ApiController]
     public class AuthorsController : ControllerBase
@@ -35,13 +35,16 @@ namespace QuotesManagement.Controllers
         }
 
 
+        [Authorize]
         [HttpPost]
-        public IActionResult AddAuthor(Author author)
+        public IActionResult AddAuthor(AuthorDto author)
         {
             if (!ModelState.IsValid)
                 return BadRequest("Invalid data.");
 
-            var newAuthor = authorData.Add(author);
+            var authoFromDto = AutoMapperConversion.ToAuthor(author);
+
+            var newAuthor = authorData.Add(authoFromDto);
             authorData.Commit();
 
             return new OkObjectResult(new

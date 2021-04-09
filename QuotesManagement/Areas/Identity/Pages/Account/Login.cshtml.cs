@@ -70,7 +70,7 @@ namespace QuotesManagement.Areas.Identity.Pages.Account
             ReturnUrl = returnUrl;
         }
 
-        public async Task<IActionResult> OnPostAsync(string returnUrl = null)
+        public async Task<IActionResult> OnPostAsync(string username = null, string password = null, string returnUrl = null)
         {
             returnUrl = Url.Content("~/");
 

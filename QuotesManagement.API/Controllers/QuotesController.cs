@@ -1,12 +1,12 @@
 ﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using QuotesManagement.API.Helpers;
 using QuotesManagement.Core;
 using QuotesManagement.Data;
 using System.Collections.Generic;
 
 namespace QuotesManagement.Controllers
 {
-    [Authorize]
     [Route("api/[controller]")]
     [ApiController]
     public class QuotesController : ControllerBase
@@ -65,9 +65,9 @@ namespace QuotesManagement.Controllers
             });
         }
 
-
+        [Authorize]
         [HttpPost]
-        public IActionResult AddQuote(Quote quote)
+        public IActionResult AddQuote(QuoteDto quote)
         {
             if (quote.AuthorId == 0)
                 return BadRequest(new
@@ -79,7 +79,9 @@ namespace QuotesManagement.Controllers
             if (!ModelState.IsValid)
                 return BadRequest("Invalid data.");
 
-            var newQuote = quoteData.Add(quote);
+            var quoteFromDto = AutoMapperConversion.ToQuote(quote);
+
+            var newQuote = quoteData.Add(quoteFromDto);
             quoteData.Commit();
 
             return new OkObjectResult(new
@@ -90,8 +92,9 @@ namespace QuotesManagement.Controllers
             });
         }
 
+        [Authorize]
         [HttpPut("/api/quotes/{Id}")]
-        public IActionResult UpdateQuote(long Id, Quote quote)
+        public IActionResult UpdateQuote(long Id, QuoteDto quote)
         {
             if (quote.AuthorId == 0)
                 return BadRequest(new
@@ -110,8 +113,10 @@ namespace QuotesManagement.Controllers
             if (!ModelState.IsValid)
                 return BadRequest("Invalid data. ");
 
-            quote.Id = existingQuote.Id;
-            var updatedQuote = quoteData.Update(quote);
+            var quoteFromDto = AutoMapperConversion.ToQuote(quote);
+
+            quoteFromDto.Id = existingQuote.Id;
+            var updatedQuote = quoteData.Update(quoteFromDto);
             quoteData.Commit();
 
             return new OkObjectResult(new
@@ -122,6 +127,7 @@ namespace QuotesManagement.Controllers
             });
         }
 
+        [Authorize]
         [HttpDelete("/api/quotes/{Id}")]
         public IActionResult DeleteQuote(long Id)
         {
